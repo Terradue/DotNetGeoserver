@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="Terradue.Geoserver/Terradue.Geoserver.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Terradue.Geoserver/Terradue/Geoserver/DataContracts/Coverage.cs">
+    <Files>
+      <File FileName="Terradue.Geoserver/Terradue/Geoserver/DataContracts/Coverage.cs" Line="10" Column="1" />
+      <File FileName="Terradue.Geoserver/Terradue/Geoserver/DataContracts/CoverageRequest.cs" Line="19" Column="10" />
+      <File FileName="Terradue.Geoserver/Terradue/Geoserver/Geoserver.cs" Line="11" Column="1" />
+      <File FileName="Terradue.Geoserver/Terradue/Geoserver/GeoserverConstants.cs" Line="3" Column="29" />
+      <File FileName="Terradue.Geoserver/Terradue/Geoserver/MimeMapper.cs" Line="7" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../../../tepqw/Terradue.TepQW.WebServer/Terradue/TepQW/WebServer/Service/Share.Service.cs" line="93" offsetX="1080" offsetY="1380" expression="redirect" liveUpdate="False" />
+    <Watch file="../../../../../tepqw/Terradue.TepQW.WebServer/Terradue/TepQW/WebServer/Service/Wps.Service.cs" line="413" offsetX="574" offsetY="6180" expression="HttpContext.Current.Request" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

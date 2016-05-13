@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7DD99B8-C598-4C79-A825-6A81D3C013BF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Terradue.Geoserver</RootNamespace>
+    <AssemblyName>Terradue.Geoserver</AssemblyName>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\Coverage.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\CoverageRequest.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\CoverageStore.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\CoverageStoreRequest.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\GetCoveragesResponse.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\GetCoverageStoresResponse.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\GetDefaultWorkspaceResponse.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\GetLayerGroupCoveragesResponse.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\GetLayerGroupsResponse.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\GetWorkspacesResponse.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\Layer.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\LayerGroup.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\LayerGroupRequest.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\Workspace.cs" />
+    <Compile Include="Terradue\Geoserver\DataContracts\WorkspaceRequest.cs" />
+    <Compile Include="Terradue\Geoserver\Geoserver.cs" />
+    <Compile Include="Terradue\Geoserver\GeoserverConstants.cs" />
+    <Compile Include="Terradue\Geoserver\MimeMapper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Terradue\" />
+    <Folder Include="Terradue\Geoserver\" />
+    <Folder Include="Terradue\Geoserver\DataContracts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
